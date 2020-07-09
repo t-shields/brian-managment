@@ -11,15 +11,15 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/cd',
+        redirectTo: '/merchandise',
         pathMatch: 'full',
       },
       {
-        path: 'cd',
+        path: 'merchandise',
         component: CdComponent,
-      }
+      },
       {
-        path: '/itinerary',
+        path: 'itinerary',
         component: ItineraryComponent,
       }
     ]

@@ -1,1 +1,30 @@
-<p>navigation works!</p>
+<clr-main-container>
+	<clr-header>
+		<div class="branding">
+			<a routerLink="" class="nav-link">
+				<span class="title">Brian Hotchkies Managment System</span>
+			</a>
+		</div>
+	</clr-header>
+	<div class="content-container">
+		<div class="content-area">
+			<router-outlet></router-outlet>
+		</div>
+		<nav class="sidenav" [clr-nav-level]="1">
+			<section class="sidenav-content">
+				<section class="nav-group collapsible">
+					<input id="drop" type="checkbox" />
+					<label for="drop">Pages</label>
+					<ul class="nav-list">
+						<li>
+							<a routerLink="/merchandise" class="nav-link">Merchandise</a>
+						</li>
+						<li>
+							<a routerLink="/itinerary" class="nav-link">Itinerary</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</nav>
+	</div>
+</clr-main-container>
